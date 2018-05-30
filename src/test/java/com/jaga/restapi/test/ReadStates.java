@@ -18,37 +18,43 @@ public class ReadStates {
 
 	public static Response response;
 	public static int ok = 200;
-	ArrayList<String> stateName;
-	ArrayList<Integer> statePopulation;
+	public static ArrayList<Integer> stateId;
+	public static ArrayList<String> stateName;
+	public static ArrayList<Integer> statePopulation;
 
 	@BeforeClass
 	public void DataSetup() {
-		
-		stateName = new ArrayList<String>();
+
+		stateId = new ArrayList<Integer>();
+	    stateName = new ArrayList<String>();
+		statePopulation = new ArrayList<Integer>();
+	
 		stateName.add("TamilNadu");
 		stateName.add("AndraPradesh");
 		stateName.add("Kerala");
 		stateName.add("Karnataka");
 
-		statePopulation = new ArrayList<Integer>();
 		statePopulation.add(10000);
 		statePopulation.add(7000);
 		statePopulation.add(8000);
 		statePopulation.add(20000);
 
+		
+
 	}
 
 	@Test
-	public void getStates() {
-		
+	public static void getStates() {
+
 		Gson gson = new GsonBuilder().create();
 		GetStates[] getStates;
-		
+
 		String apiEndPointUrl = Url.resourceURL + EndPointUrl.READ_STATES.getResourcePath();
 		System.out.println("apiEndPointUrl : " + apiEndPointUrl);
 		response = RestWebService.get(apiEndPointUrl);
-	
+
 		if (response.getStatusCode() == ok) {
+			
 			getStates = gson.fromJson(response.getBody().asString(), GetStates[].class);
 
 			for (int i = 1; i <= getStates.length; i++) {
@@ -56,6 +62,10 @@ public class ReadStates {
 				Assert.assertEquals(new Integer(i), getStates[i - 1].getId());
 				Assert.assertEquals(stateName.get(i - 1), getStates[i - 1].getStateName());
 				Assert.assertEquals(statePopulation.get(i - 1), getStates[i - 1].getPopulation());
+
+				stateId.add(getStates[i - 1].getId());
+				stateName.add(getStates[i - 1].getStateName());
+				statePopulation.add(getStates[i - 1].getPopulation());
 
 			}
 		}

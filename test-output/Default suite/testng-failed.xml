@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jaga.restapi.test.ReadStates">
+      <class name="com.jaga.restapi.test.ReadState">
         <methods>
           <include name="getStates"/>
+          <include name="getState"/>
           <include name="DataSetup"/>
         </methods>
-      </class> <!-- com.jaga.restapi.test.ReadStates -->
+      </class> <!-- com.jaga.restapi.test.ReadState -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

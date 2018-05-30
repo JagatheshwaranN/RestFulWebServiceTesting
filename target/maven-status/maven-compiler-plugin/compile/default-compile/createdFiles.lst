@@ -1,0 +1,3 @@
+com\jaga\springrest\controller\StateController.class
+com\jaga\springrest\bean\State.class
+com\jaga\springrest\service\StateService.class

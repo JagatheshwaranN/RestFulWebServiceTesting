@@ -34,7 +34,7 @@ public class ReadStates {
 		stateName.add("Kerala");
 		stateName.add("Karnataka");
 
-		statePopulation.add(10000);
+		statePopulation.add(15000);
 		statePopulation.add(7000);
 		statePopulation.add(8000);
 		statePopulation.add(20000);

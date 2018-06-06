@@ -40,6 +40,7 @@ public class ReadState extends ReadStates {
 		String apiEndPointUrl = Url.resourceURL + EndPointUrl.READ_STATE.getResourcePath(id.toString());
 		System.out.println("apiEndPointUrl : " + apiEndPointUrl);
 		response = RestWebService.get(apiEndPointUrl);
+		System.out.println(response.asString());
 
 		if (response.getStatusCode() == ok) {
 			

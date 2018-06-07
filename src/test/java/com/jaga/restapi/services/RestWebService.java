@@ -34,7 +34,7 @@ public class RestWebService {
 	public static Response delete(String url) {
 		RequestSpecification requestSpecification = RestAssured.given();
 		requestSpecification.contentType(ContentType.JSON);
-		Response response = requestSpecification.post(url);
+		Response response = requestSpecification.delete(url);
 		return response;
 
 	}

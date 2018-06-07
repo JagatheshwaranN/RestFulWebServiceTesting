@@ -1,115 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="5202" started-at="2018-06-06T03:35:32Z" finished-at="2018-06-06T03:35:38Z">
+  <suite name="Default suite" duration-ms="2277" started-at="2018-06-07T04:05:32Z" finished-at="2018-06-07T04:05:34Z">
     <groups>
     </groups>
-    <test name="GetStates" duration-ms="5202" started-at="2018-06-06T03:35:32Z" finished-at="2018-06-06T03:35:38Z">
-      <class name="com.jaga.restapi.test.ReadState">
-        <test-method status="PASS" signature="DataSetup()[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="DataSetup" is-config="true" duration-ms="0" started-at="2018-06-06T09:05:37Z" finished-at="2018-06-06T09:05:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DataSetup -->
-        <test-method status="PASS" signature="getState(java.lang.Integer, java.lang.String, java.lang.Integer)[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="getState" duration-ms="136" started-at="2018-06-06T09:05:37Z" data-provider="GetStateById" finished-at="2018-06-06T09:05:37Z">
+    <test name="Default test" duration-ms="2277" started-at="2018-06-07T04:05:32Z" finished-at="2018-06-07T04:05:34Z">
+      <class name="com.jaga.restapi.test.DeleteState">
+        <test-method status="PASS" signature="deleteState(java.lang.Integer)[pri:0, instance:com.jaga.restapi.test.DeleteState@3884b2]" name="deleteState" duration-ms="2208" started-at="2018-06-07T09:35:32Z" data-provider="deleteState" finished-at="2018-06-07T09:35:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TamilNadu]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[15000]]>
+                <![CDATA[5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getState -->
-        <test-method status="PASS" signature="getState(java.lang.Integer, java.lang.String, java.lang.Integer)[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="getState" duration-ms="31" started-at="2018-06-06T09:05:37Z" data-provider="GetStateById" finished-at="2018-06-06T09:05:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[AndraPradesh]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getState -->
-        <test-method status="PASS" signature="getState(java.lang.Integer, java.lang.String, java.lang.Integer)[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="getState" duration-ms="47" started-at="2018-06-06T09:05:38Z" data-provider="GetStateById" finished-at="2018-06-06T09:05:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Kerala]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getState -->
-        <test-method status="PASS" signature="getState(java.lang.Integer, java.lang.String, java.lang.Integer)[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="getState" duration-ms="42" started-at="2018-06-06T09:05:38Z" data-provider="GetStateById" finished-at="2018-06-06T09:05:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Karnataka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[20000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getState -->
-        <test-method status="PASS" signature="getStates()[pri:0, instance:com.jaga.restapi.test.ReadState@1efef64]" name="getStates" duration-ms="24" started-at="2018-06-06T09:05:38Z" finished-at="2018-06-06T09:05:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getStates -->
-      </class> <!-- com.jaga.restapi.test.ReadState -->
-      <class name="com.jaga.restapi.test.ReadStates">
-        <test-method status="PASS" signature="DataSetup()[pri:0, instance:com.jaga.restapi.test.ReadStates@19f99ea]" name="DataSetup" is-config="true" duration-ms="47" started-at="2018-06-06T09:05:32Z" finished-at="2018-06-06T09:05:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DataSetup -->
-        <test-method status="PASS" signature="getStates()[pri:0, instance:com.jaga.restapi.test.ReadStates@19f99ea]" name="getStates" duration-ms="4742" started-at="2018-06-06T09:05:33Z" finished-at="2018-06-06T09:05:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getStates -->
-      </class> <!-- com.jaga.restapi.test.ReadStates -->
-    </test> <!-- GetStates -->
-  </suite> <!-- Regression Suite -->
+        </test-method> <!-- deleteState -->
+      </class> <!-- com.jaga.restapi.test.DeleteState -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

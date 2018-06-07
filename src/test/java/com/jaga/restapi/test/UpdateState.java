@@ -1,13 +1,12 @@
 package com.jaga.restapi.test;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.jaga.restapi.pojo.UpdateStateDetail;
+import com.jaga.restapi.pojo.ModifyState;
 import com.jaga.restapi.services.RestWebService;
 import com.jaga.restapi.utility.EndPointUrl;
 import com.jaga.restapi.utility.Url;
@@ -18,32 +17,20 @@ public class UpdateState {
 	public static Response response;
 	public static int ok = 200;
 
-	public int stateId;
-	public String stateName;
-	public int statePopulation;
-
-	@BeforeClass
-	public void dataSetup() {
-
-		stateId = 1;
-		statePopulation = 15000;
-
-	}
-
 	@Test(dataProvider = "modifyState")
 	public void updateStateDetail(String request, String stateName, Integer population) {
 
 		Gson gson = new GsonBuilder().create();
-		UpdateStateDetail updateState;
+		ModifyState modifyState;
 
 		String apiEndPointUrl = Url.resourceURL + EndPointUrl.UPDATE_STATE.getResourcePath();
 		System.out.println("apiEndPointUrl : " + apiEndPointUrl);
 		response = RestWebService.put(apiEndPointUrl, request);
 		System.out.println(response.asString());
 		if (response.getStatusCode() == ok) {
-			updateState = gson.fromJson(response.getBody().asString(), UpdateStateDetail.class);
-			Assert.assertEquals(stateName, updateState.getStateName());
-			Assert.assertEquals(new Integer(population), updateState.getPopulation());
+			modifyState = gson.fromJson(response.getBody().asString(), ModifyState.class);
+			Assert.assertEquals(stateName, modifyState.getStateName());
+			Assert.assertEquals(new Integer(population), modifyState.getPopulation());
 		}
 
 	}

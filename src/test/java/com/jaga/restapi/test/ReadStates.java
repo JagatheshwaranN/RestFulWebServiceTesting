@@ -33,11 +33,13 @@ public class ReadStates {
 		stateName.add("AndraPradesh");
 		stateName.add("Kerala");
 		stateName.add("Karnataka");
+		stateName.add("Goa");
 
 		statePopulation.add(15000);
 		statePopulation.add(7000);
 		statePopulation.add(8000);
 		statePopulation.add(20000);
+		statePopulation.add(2000);
 
 		
 

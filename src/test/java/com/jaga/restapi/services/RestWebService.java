@@ -5,6 +5,12 @@ import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 30/5/2018
+ *
+ */
 public class RestWebService {
 
 	public static Response get(String url) {

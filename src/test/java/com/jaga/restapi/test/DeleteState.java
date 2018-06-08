@@ -8,6 +8,12 @@ import com.jaga.restapi.utility.EndPointUrl;
 import com.jaga.restapi.utility.Url;
 import com.jayway.restassured.response.Response;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 7/6/2018
+ *
+ */
 public class DeleteState {
 
 	public static Response response;

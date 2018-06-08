@@ -10,6 +10,13 @@ import com.jaga.springrest.bean.State;
  * It is just a helper class which should be replaced by database implementation.
  * It is not very well written class, it is just used for demonstration.
  */
+
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 27/5/2018
+ *
+ */
 public class StateService {
 
 	public static HashMap<Integer, State> getStateMap() {

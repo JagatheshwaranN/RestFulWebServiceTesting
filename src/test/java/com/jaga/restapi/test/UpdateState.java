@@ -12,6 +12,12 @@ import com.jaga.restapi.utility.EndPointUrl;
 import com.jaga.restapi.utility.Url;
 import com.jayway.restassured.response.Response;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 6/6/2018
+ *
+ */
 public class UpdateState {
 
 	public static Response response;

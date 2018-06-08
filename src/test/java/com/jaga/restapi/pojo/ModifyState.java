@@ -3,6 +3,12 @@ package com.jaga.restapi.pojo;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 6/6/2018
+ *
+ */
 public class ModifyState {
 
 @SerializedName("id")

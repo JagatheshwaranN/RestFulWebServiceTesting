@@ -1,5 +1,11 @@
 package com.jaga.restapi.utility;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 30/5/2018
+ *
+ */
 public enum EndPointUrl {
 
 	CREATE_STATE("/states/details"), 

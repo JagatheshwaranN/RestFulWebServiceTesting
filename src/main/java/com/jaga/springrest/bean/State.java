@@ -1,5 +1,11 @@
 package com.jaga.springrest.bean;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 27/5/2018
+ *
+ */
 public class State {
 
 	int id;

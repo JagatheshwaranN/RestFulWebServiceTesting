@@ -13,6 +13,12 @@ import com.jaga.restapi.utility.EndPointUrl;
 import com.jaga.restapi.utility.Url;
 import com.jayway.restassured.response.Response;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 1/6/2018
+ *
+ */
 public class ReadState extends ReadStates {
 
 	public static Response response;

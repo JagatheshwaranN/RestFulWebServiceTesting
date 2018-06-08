@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 
+ * @author Jagatheshwaran
+ * @since 27/5/2018
+ *
+ */
 @RestController
 public class StateController {
 
